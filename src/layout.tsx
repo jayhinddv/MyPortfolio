@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import App from './App';
 import './globals.css'; // Ensure this file is included for styles
 
-export default function RootLayout() {
+export default function RootLayout():JSX.Element {
   return (
     <html lang="en">
       <body>

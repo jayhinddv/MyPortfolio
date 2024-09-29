@@ -8,7 +8,6 @@ import {
   CardHeader,
   CardTitle,
 } from "../components/ui/card";
-import Link from "react-router-dom";
 import { cn } from "../lib/utils";
 import { buttonVariants } from "../components/ui/button";
 import FramerWrapper from "../components/FramerWrapper";
