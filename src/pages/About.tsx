@@ -3,7 +3,7 @@ import FramerWrapper from "../components/FramerWrapper";
 import Heading from "../components/Heading";
 import { Badge } from "../components/ui/badge";
 import { Circle, Heart, User2 } from "lucide-react";
-const page = () => {
+export default function About() {
   const items = [
     { hobby: "coding" },
     { hobby: "Tech Blog Reading" },
@@ -61,5 +61,3 @@ const page = () => {
     </div>
   );
 };
-
-export default page;
