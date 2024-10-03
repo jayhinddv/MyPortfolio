@@ -1,11 +1,11 @@
-import Home from "./pages/home"; 
-import About from "./pages/about";
-import Contact from "./pages/contact";
-import Education from "./pages/education";
-import Project from "./pages/project";
-import Skills from "./pages/skills";
-import { Route, Routes } from "react-router-dom";
 
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Skills from "./pages/Skills";
+import Project from "./pages/Project";
+import Contact from "./pages/Contact";
+import Education from "./pages/Education";
 export default function App() {
   return (
     <Routes>

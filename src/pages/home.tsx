@@ -5,12 +5,12 @@ import GithubBtn from "../components/GithubBtn";
 import DownLoadResumeBtn from "../components/DownLoadResumeBtn";
 import FramerWrapper from "../components/FramerWrapper";
 
-export const siteConfig = {
-  name: "Jayhind Yadav",
-  description: "I am a Passionate Software Developer",
-  ogImage: "",
-  url: "",
-}
+// export const siteConfig = {
+//   name: "Jayhind Yadav",
+//   description: "I am a Passionate Software Developer",
+//   ogImage: "",
+//   url: "",
+// }
 export default function App() {
   return (
    <>
