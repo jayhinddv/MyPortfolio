@@ -1,11 +1,11 @@
 
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home.tsx";
+import Home from "./pages/home.tsx";
 import About from "./pages/About.tsx";
-import Skills from "./pages/Skills.tsx";
-import Project from "./pages/Project.tsx";
-import Contact from "./pages/Contact.tsx";
-import Education from "./pages/Education.tsx";
+import Skills from "./pages/skills.tsx";
+import Project from "./pages/project.tsx";
+import Contact from "./pages/contact.tsx";
+import Education from "./pages/education.tsx";
 export default function App() {
   return (
     <Routes>
