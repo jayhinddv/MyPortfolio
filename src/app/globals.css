@@ -41,12 +41,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background:
-    radial-gradient(circle at 88% 10%, rgba(15, 118, 110, 0.12), transparent 24rem),
-    linear-gradient(90deg, rgba(16, 18, 20, 0.035) 1px, transparent 1px),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0, rgba(247, 248, 247, 0) 34rem),
-    var(--paper);
-  background-size: auto, 96px 96px, auto, auto;
+  background: var(--paper);
   color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   text-rendering: optimizeLegibility;
@@ -54,12 +49,7 @@ body {
 }
 
 .dark body {
-  background:
-    radial-gradient(circle at 86% 10%, rgba(81, 214, 187, 0.13), transparent 26rem),
-    linear-gradient(90deg, rgba(245, 247, 245, 0.028) 1px, transparent 1px),
-    linear-gradient(180deg, rgba(18, 22, 21, 0.95) 0, rgba(11, 13, 13, 0) 34rem),
-    var(--paper);
-  background-size: auto, 96px 96px, auto, auto;
+  background: var(--paper);
 }
 
 body::selection {
@@ -81,7 +71,7 @@ img {
 }
 
 .container-shell {
-  width: min(1180px, calc(100% - 32px));
+  width: min(1240px, calc(100% - 28px));
   margin-inline: auto;
 }
 
@@ -105,11 +95,11 @@ img {
 
 @layer components {
   .section-space {
-    @apply py-20 sm:py-24 lg:py-32;
+    @apply py-12 sm:py-14 lg:py-16;
   }
 
   .section-band {
-    @apply border-y border-[color:var(--line)] bg-white/60 dark:bg-white/[0.025];
+    @apply border-y border-[color:var(--line)] bg-white/55 dark:bg-white/[0.025];
   }
 
   .surface-card {
@@ -129,11 +119,11 @@ img {
   }
 
   .button-primary {
-    @apply inline-flex min-h-11 items-center justify-center rounded-md bg-[color:var(--charcoal)] px-5 py-3 text-sm font-semibold text-white shadow-[0_14px_36px_rgba(16,18,20,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[color:var(--accent-strong)] hover:shadow-[0_18px_48px_rgba(15,118,110,0.22)] active:translate-y-0 dark:text-[#101214];
+    @apply inline-flex min-h-10 items-center justify-center bg-[color:var(--charcoal)] px-4 py-2.5 text-sm font-semibold text-white transition duration-300 hover:bg-[color:var(--accent-strong)] active:translate-y-0 dark:text-[#101214];
   }
 
   .button-secondary {
-    @apply inline-flex min-h-11 items-center justify-center rounded-md border border-[color:var(--line)] bg-white/70 px-5 py-3 text-sm font-semibold text-[color:var(--ink)] shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-[color:var(--accent)] hover:bg-white active:translate-y-0 dark:bg-white/[0.05] dark:hover:bg-white/[0.09];
+    @apply inline-flex min-h-10 items-center justify-center border border-[color:var(--line)] bg-white/70 px-4 py-2.5 text-sm font-semibold text-[color:var(--ink)] transition duration-300 hover:border-[color:var(--accent)] hover:bg-white active:translate-y-0 dark:bg-white/[0.05] dark:hover:bg-white/[0.09];
   }
 
   .eyebrow-pill {
@@ -141,7 +131,7 @@ img {
   }
 
   .chip {
-    @apply rounded-md border border-[color:var(--line)] bg-white/60 px-2.5 py-1 text-xs font-medium text-[color:var(--muted)] dark:bg-white/[0.06] dark:text-zinc-200;
+    @apply border border-[color:var(--line)] bg-white/60 px-2.5 py-1 text-xs font-medium text-[color:var(--muted)] dark:bg-white/[0.06] dark:text-zinc-200;
   }
 
   .section-kicker {

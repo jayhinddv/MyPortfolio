@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbJsonLd, blogPostingJsonLd } from "@/lib/seo";
-import { blogPosts, siteConfig } from "@/data/site";
+import { blogPosts, seoKeywords, siteConfig } from "@/data/site";
 
 type BlogPostPageProps = {
   params: Promise<{ slug: string }>;
@@ -23,12 +23,31 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   return {
     title: post.title,
     description: post.description,
+    keywords: [...seoKeywords, ...post.tags, post.title],
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
       title: post.title,
       description: post.description,
       url: `${siteConfig.baseUrl}/blog/${post.slug}`,
       type: "article",
+      publishedTime: post.date,
+      modifiedTime: post.date,
+      authors: [siteConfig.name],
+      tags: post.tags,
+      images: [
+        {
+          url: siteConfig.ogImage,
+          width: 1200,
+          height: 630,
+          alt: `${post.title} by ${siteConfig.name}`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.description,
+      images: [siteConfig.ogImage],
     },
   };
 }

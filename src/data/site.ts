@@ -2,10 +2,13 @@ import type { MetadataRoute } from "next";
 
 export const siteConfig = {
   name: "Jayhind Yadav",
-  role: "Full Stack Backend-Heavy Systems Engineer",
+  role: "Backend-Focused Full Stack Developer",
   baseUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://jayhind-yadav.vercel.app",
   description:
-    "Jayhind Yadav designs and builds scalable full-stack systems with Node.js, React, PostgreSQL, Redis, BullMQ, Docker, real-time calling workflows, and production-grade APIs.",
+    "Jayhind Yadav builds reliable full-stack business systems with Node.js, React, PostgreSQL, Redis, BullMQ, Docker, real-time workflows, and production-ready APIs.",
+  seoTitle: "Jayhind Yadav | Node.js Backend & Full Stack Developer in India",
+  seoDescription:
+    "Portfolio of Jayhind Yadav, a 4+ year backend-focused full stack developer in India building Node.js, React, PostgreSQL, Redis, BullMQ, Docker, CRM, real-time calling, and scalable business systems.",
   email: "jayhinddv@gmail.com",
   phone: "+91 727-584-1548",
   location: "Delhi, India",
@@ -13,12 +16,33 @@ export const siteConfig = {
   profileImage: "/jayhind-hero.webp",
   ogImage: "/opengraph-image",
   socials: {
-    github: "https://github.com/taqui-786",
+    github: "https://github.com/jayhinddv",
     linkedin: "https://www.linkedin.com/in/jayhind-yadav-224908276/",
     twitter: "https://x.com/Jayhind_Indian",
     facebook: "https://www.facebook.com/jayhinddv",
   },
 };
+
+export const seoKeywords = [
+  "Jayhind Yadav",
+  "Jayhind Yadav portfolio",
+  "Jayhind Yadav developer",
+  "Jayhind Yadav Node.js developer",
+  "Node.js developer India",
+  "backend developer India",
+  "full stack developer India",
+  "React developer India",
+  "PostgreSQL developer",
+  "Redis developer",
+  "BullMQ developer",
+  "Docker developer",
+  "CRM software developer",
+  "real-time calling system developer",
+  "backend-focused full stack developer",
+  "software engineer Delhi",
+  "software engineer India",
+  "Node.js React PostgreSQL developer",
+];
 
 export const navItems = [
   { label: "Home", href: "/" },
@@ -30,24 +54,24 @@ export const navItems = [
 
 export const highlights = [
   {
-    title: "Real-time call systems",
-    body: "Built CRM calling workflows with WebRTC, PBX/Asterisk thinking, agent state, and customer communication inside business operations.",
+    title: "Production API ownership",
+    body: "Designed backend APIs around business workflows, not isolated CRUD screens, with clear contracts for React clients and integrations.",
   },
   {
-    title: "Backend APIs for CRM workflows",
-    body: "Designed APIs around lead flow, customer activity, integrations, reporting, and day-to-day operational needs instead of isolated CRUD screens.",
+    title: "Real-time CRM systems",
+    body: "Built calling workflows with WebRTC, PBX/Asterisk thinking, agent state, and customer communication inside daily CRM operations.",
   },
   {
-    title: "Redis and BullMQ workers",
-    body: "Used queues, caching, and background workers to keep user flows responsive and long-running jobs reliable.",
+    title: "Async jobs and queues",
+    body: "Used Redis and BullMQ to keep user flows responsive while handling retries, duplicate execution, and long-running background work.",
   },
   {
-    title: "Concurrency fixes in containers",
-    body: "Handled duplicate execution and state coordination problems that show up when services run across multiple containers.",
+    title: "Database performance",
+    body: "Improved SQL-heavy workflows through indexing, query optimization, normalized data flows, and pragmatic caching.",
   },
   {
-    title: "Database performance work",
-    body: "Improved data access with indexing, query optimization, normalized data flows, and pragmatic caching.",
+    title: "Deployment-ready delivery",
+    body: "Containerized services, prepared production handoffs, and worked with the small details that make software easier to operate.",
   },
 ];
 
@@ -81,10 +105,10 @@ export const experience = [
     period: "Dec 2024 - Present",
     location: "Delhi, India",
     bullets: [
-      "Architect scalable full-stack applications using Node.js, React, and PostgreSQL for CRM and business workflow systems.",
-      "Design high-performance REST APIs, webhook flows, and real-time communication paths across internal operations.",
-      "Use Redis and BullMQ for asynchronous job processing where reliability, retries, and duplicate execution control matter.",
-      "Containerize services with Docker and support AWS-oriented deployments while improving production readiness.",
+      "Own backend-heavy full-stack features for CRM and business workflow systems using Node.js, React, and PostgreSQL.",
+      "Design REST APIs, webhook flows, and real-time communication paths for internal teams that depend on fast operational visibility.",
+      "Use Redis and BullMQ for asynchronous processing, retries, caching, and duplicate execution control across running services.",
+      "Containerize services with Docker, support AWS-oriented deployments, and improve production readiness before handoff.",
     ],
   },
   {
@@ -94,7 +118,7 @@ export const experience = [
     location: "Noida, India",
     bullets: [
       "Built full-stack systems for property valuation workflows with Node.js, React, MongoDB, SQL Server, and external APIs.",
-      "Contributed to system architecture, API design, QA collaboration, and production handoffs for valuation and reporting products.",
+      "Contributed to system architecture, API design, QA collaboration, and production handoffs for valuation and reporting products used by business teams.",
       "Improved database-heavy workflows through SQL tuning, cleaner data access, and focused backend ownership.",
     ],
   },
@@ -105,7 +129,7 @@ export const experience = [
     location: "Patna, India",
     bullets: [
       "Delivered MERN and MySQL-backed products across e-commerce, medical, and enterprise workflows in a startup environment.",
-      "Handled end-to-end feature development from backend APIs to React interfaces, with attention to data flow and maintainability.",
+      "Handled end-to-end feature development from backend APIs to React interfaces, with attention to data flow, maintainability, and delivery speed.",
     ],
   },
 ];
@@ -115,7 +139,7 @@ export const projects = [
     slug: "crm-real-time-calling",
     title: "CRM Platform with Integrated Real-Time Calling",
     summary:
-      "A unified CRM and calling workspace for leads, customer interactions, and agent workflows.",
+      "A unified CRM and calling workspace for leads, customer interactions, agent state, and operational reporting.",
     problem:
       "Businesses needed one place to manage leads, customer interactions, and calling workflows without constantly switching between CRM screens and external calling tools.",
     solution:
@@ -137,7 +161,7 @@ export const projects = [
     slug: "valuation-reporting",
     title: "Property Valuation & Automated Reporting System",
     summary:
-      "A reporting platform that reduces manual valuation work through normalized data and automated report generation.",
+      "A reporting platform that reduced repetitive valuation work through normalized data, integrations, and backend-driven report generation.",
     problem:
       "Manual property valuation reports were time-consuming, repetitive, and vulnerable to data entry mistakes.",
     solution:
@@ -159,7 +183,7 @@ export const projects = [
     slug: "ai-lead-generation",
     title: "AI-Powered Lead Generation & Automation Workflows",
     summary:
-      "Automated lead workflows with integrations, background processing, and reliable communication events.",
+      "Automated lead workflows with integrations, queue-backed processing, and reliable communication events.",
     problem:
       "Sales teams needed better lead routing and follow-up automation without losing visibility into the pipeline.",
     solution:
@@ -181,7 +205,7 @@ export const projects = [
     slug: "legal-advisory-platform",
     title: "North Eye Legal Advisory Platform",
     summary:
-      "A platform for secure document exchange and legal consultation workflows.",
+      "A platform for secure document exchange, consultation workflows, and structured client-advisor communication.",
     problem:
       "Clients and advisors needed a structured place for consultations, documents, and case-oriented communication.",
     solution:
@@ -202,7 +226,7 @@ export const projects = [
     slug: "auction-commerce-insurance",
     title: "Auction, E-Commerce & Insurance Workflow Systems",
     summary:
-      "Production-style business platforms spanning bidding, commerce, inventory, claims, and reporting.",
+      "Production-style business platforms spanning bidding, commerce, inventory, insurance claims, and reporting.",
     problem:
       "Different business teams needed practical systems for auctions, shop operations, payments, inventory, and claim tracking.",
     solution:

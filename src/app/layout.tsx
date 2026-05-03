@@ -3,35 +3,28 @@ import Script from "next/script";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
-import { personJsonLd, websiteJsonLd } from "@/lib/seo";
-import { siteConfig } from "@/data/site";
+import { personJsonLd, profilePageJsonLd, websiteJsonLd } from "@/lib/seo";
+import { seoKeywords, siteConfig } from "@/data/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.baseUrl),
   title: {
-    default: `${siteConfig.name} | Backend-Heavy Full Stack Engineer`,
+    default: siteConfig.seoTitle,
     template: `%s | ${siteConfig.name}`,
   },
-  description: siteConfig.description,
+  description: siteConfig.seoDescription,
   applicationName: `${siteConfig.name} Portfolio`,
-  keywords: [
-    "Jayhind Yadav",
-    "Node.js engineer",
-    "backend engineer",
-    "React developer",
-    "PostgreSQL",
-    "Redis",
-    "BullMQ",
-    "Docker",
-    "Asterisk",
-    "CRM systems",
-    "full stack engineer India",
-  ],
+  keywords: seoKeywords,
   authors: [{ name: siteConfig.name, url: siteConfig.baseUrl }],
   creator: siteConfig.name,
+  publisher: siteConfig.name,
+  category: "technology",
   alternates: {
     canonical: "/",
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
   },
   robots: {
     index: true,
@@ -48,8 +41,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: siteConfig.baseUrl,
-    title: `${siteConfig.name} | Backend-Heavy Full Stack Engineer`,
-    description: siteConfig.description,
+    title: siteConfig.seoTitle,
+    description: siteConfig.seoDescription,
     siteName: `${siteConfig.name} Portfolio`,
     images: [
       {
@@ -62,8 +55,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | Backend-Heavy Full Stack Engineer`,
-    description: siteConfig.description,
+    title: siteConfig.seoTitle,
+    description: siteConfig.seoDescription,
     images: [siteConfig.ogImage],
     creator: "@Jayhind_Indian",
   },
@@ -89,7 +82,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         </Script>
       </head>
       <body>
-        <JsonLd data={[personJsonLd(), websiteJsonLd()]} />
+        <JsonLd data={[personJsonLd(), websiteJsonLd(), profilePageJsonLd()]} />
         <Header />
         <main>{children}</main>
         <Footer />

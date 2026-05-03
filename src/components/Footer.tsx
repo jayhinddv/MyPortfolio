@@ -4,7 +4,7 @@ import { navItems, siteConfig } from "@/data/site";
 
 export function Footer() {
   return (
-    <footer className="border-t border-[color:var(--line)] bg-white/64 backdrop-blur-xl dark:bg-[#0b0d0d]">
+    <footer className="border-t border-[color:var(--line)] bg-white/64 dark:bg-[#0b0d0d]">
       <div className="container-shell grid gap-8 py-12 md:grid-cols-[1.2fr_0.8fr]">
         <div>
           <p className="font-semibold text-[color:var(--ink)]">{siteConfig.name}</p>
@@ -21,13 +21,13 @@ export function Footer() {
             ))}
           </div>
           <div className="flex gap-3">
-            <a href={`mailto:${siteConfig.email}`} aria-label="Email Jayhind" className="rounded-md border border-[color:var(--line)] bg-white/70 p-2 transition hover:-translate-y-0.5 hover:border-[color:var(--accent)] hover:bg-white dark:bg-white/[0.05] dark:hover:bg-white/[0.09]">
+            <a href={`mailto:${siteConfig.email}`} aria-label="Email Jayhind" className="border border-[color:var(--line)] bg-white/70 p-2 transition hover:border-[color:var(--accent)] hover:bg-white dark:bg-white/[0.05] dark:hover:bg-white/[0.09]">
               <Mail className="h-4 w-4" />
             </a>
-            <a href={siteConfig.socials.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn profile" className="rounded-md border border-[color:var(--line)] bg-white/70 p-2 transition hover:-translate-y-0.5 hover:border-[color:var(--accent)] hover:bg-white dark:bg-white/[0.05] dark:hover:bg-white/[0.09]">
+            <a href={siteConfig.socials.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn profile" className="border border-[color:var(--line)] bg-white/70 p-2 transition hover:border-[color:var(--accent)] hover:bg-white dark:bg-white/[0.05] dark:hover:bg-white/[0.09]">
               <Linkedin className="h-4 w-4" />
             </a>
-            <a href={siteConfig.socials.github} target="_blank" rel="noreferrer" aria-label="GitHub profile" className="rounded-md border border-[color:var(--line)] bg-white/70 p-2 transition hover:-translate-y-0.5 hover:border-[color:var(--accent)] hover:bg-white dark:bg-white/[0.05] dark:hover:bg-white/[0.09]">
+            <a href={siteConfig.socials.github} target="_blank" rel="noreferrer" aria-label="GitHub profile" className="border border-[color:var(--line)] bg-white/70 p-2 transition hover:border-[color:var(--accent)] hover:bg-white dark:bg-white/[0.05] dark:hover:bg-white/[0.09]">
               <Github className="h-4 w-4" />
             </a>
           </div>

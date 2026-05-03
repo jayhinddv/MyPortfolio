@@ -4,13 +4,28 @@ import { ArrowRight } from "lucide-react";
 import { JsonLd } from "@/components/JsonLd";
 import { SectionHeading } from "@/components/SectionHeading";
 import { breadcrumbJsonLd } from "@/lib/seo";
-import { blogPosts } from "@/data/site";
+import { blogPosts, seoKeywords, siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Engineering Blog",
+  title: "Engineering Blog | Node.js, Redis, BullMQ & PostgreSQL Notes",
   description:
-    "Backend engineering notes by Jayhind Yadav on Node.js scaling, Redis locks, BullMQ job handling, PostgreSQL performance, and multi-container systems.",
+    "Backend engineering notes by Jayhind Yadav on Node.js scaling, Redis locks, BullMQ job handling, PostgreSQL performance, CRM systems, and multi-container deployments.",
+  keywords: [
+    ...seoKeywords,
+    "Jayhind Yadav blog",
+    "Node.js engineering blog",
+    "Redis locks Node.js",
+    "BullMQ production",
+    "PostgreSQL performance CRM",
+  ],
   alternates: { canonical: "/blog" },
+  openGraph: {
+    title: "Jayhind Yadav Engineering Blog",
+    description:
+      "Technical notes on Node.js, Redis, BullMQ, PostgreSQL, backend reliability, and production full-stack systems.",
+    url: `${siteConfig.baseUrl}/blog`,
+    type: "website",
+  },
 };
 
 export default function BlogPage() {

@@ -17,9 +17,9 @@ export function ContactLinks() {
           href={item.href}
           target={item.href.startsWith("http") ? "_blank" : undefined}
           rel={item.href.startsWith("http") ? "noreferrer" : undefined}
-          className="surface-card flex items-center gap-3 p-4 font-medium text-[color:var(--ink)] transition hover:-translate-y-1 hover:border-[color:var(--accent)]"
+          className="flex items-center gap-3 border border-[color:var(--line)] bg-[color:var(--card)] p-4 font-medium text-[color:var(--ink)] transition hover:border-[color:var(--accent)]"
         >
-          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-md bg-[color:var(--charcoal)] text-white dark:text-[#101214]">
+          <span className="grid h-10 w-10 shrink-0 place-items-center bg-[color:var(--charcoal)] text-white dark:text-[#101214]">
             <item.icon className="h-5 w-5" />
           </span>
           {item.label}
