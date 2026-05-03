@@ -1,9 +1,11 @@
 import type { MetadataRoute } from "next";
 
+const configuredBaseUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.jayhinddev.in").replace(/\/+$/, "");
+
 export const siteConfig = {
   name: "Jayhind Yadav",
   role: "Backend-Focused Full Stack Developer",
-  baseUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://jayhind-yadav.vercel.app",
+  baseUrl: configuredBaseUrl,
   description:
     "Jayhind Yadav builds reliable full-stack business systems with Node.js, React, PostgreSQL, Redis, BullMQ, Docker, real-time workflows, and production-ready APIs.",
   seoTitle: "Jayhind Yadav | Node.js Backend & Full Stack Developer in India",
