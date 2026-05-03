@@ -1,6 +1,6 @@
 Jayhind Yadav
 Site: https://www.jayhinddev.in
-Role: Backend-Focused Full Stack Developer
+Role: Senior Software Engineer
 Location: Delhi, India
 Email: jayhinddv@gmail.com
 GitHub: https://github.com/jayhinddv

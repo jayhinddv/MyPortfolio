@@ -36,7 +36,7 @@ export function personJsonLd() {
     },
     hasOccupation: {
       "@type": "Occupation",
-      name: "Backend-Focused Full Stack Developer",
+      name: "Senior Software Engineer",
       occupationLocation: {
         "@type": "Country",
         name: "India",

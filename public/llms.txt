@@ -1,6 +1,6 @@
 # Jayhind Yadav
 
-Jayhind Yadav is a backend-focused full stack developer based in Delhi, India.
+Jayhind Yadav is a Senior Software Engineer and backend-focused fullstack engineer based in Delhi, India.
 
 Website: https://www.jayhinddev.in
 GitHub: https://github.com/jayhinddv

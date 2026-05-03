@@ -8,7 +8,7 @@ import { seoKeywords, siteConfig } from "@/data/site";
 export const metadata: Metadata = {
   title: "Contact | Hire Jayhind Yadav",
   description:
-    "Contact Jayhind Yadav for backend-focused full stack engineering roles involving Node.js, JavaScript, PostgreSQL, Redis, BullMQ, Docker, AWS services, CRM systems, real-time workflows, and scalable APIs.",
+    "Contact Jayhind Yadav, Senior Software Engineer, for backend-focused fullstack engineering roles involving Node.js, React, PostgreSQL, Redis, BullMQ, Docker, AWS, CRM systems, high-volume webhooks, AI integrations, real-time workflows, and scalable APIs.",
   keywords: [
     ...seoKeywords,
     "hire Jayhind Yadav",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/contact" },
   openGraph: {
-    title: "Contact Jayhind Yadav | Backend-Focused Full Stack Developer",
+    title: "Contact Jayhind Yadav | Senior Software Engineer",
     description:
       "Reach Jayhind Yadav for Node.js, JavaScript, PostgreSQL, Redis, BullMQ, Docker, AWS, CRM, real-time workflow, and production API roles.",
     url: `${siteConfig.baseUrl}/contact`,

@@ -18,7 +18,7 @@ export function Header() {
           </span>
           <span className="hidden leading-tight sm:block">
             <span className="block font-semibold text-[color:var(--ink)]">{siteConfig.name}</span>
-            <span className="block text-xs text-[color:var(--muted)]">Backend-focused full stack</span>
+            <span className="block text-xs text-[color:var(--muted)]">Senior Software Engineer</span>
           </span>
         </Link>
 

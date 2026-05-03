@@ -4,13 +4,13 @@ const configuredBaseUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.jayh
 
 export const siteConfig = {
   name: "Jayhind Yadav",
-  role: "Backend-Focused Full Stack Developer",
+  role: "Senior Software Engineer",
   baseUrl: configuredBaseUrl,
   description:
-    "Jayhind Yadav builds reliable backend-focused business systems with Node.js, JavaScript, PostgreSQL, Redis, BullMQ, Docker, AWS services, CRM workflows, and production-ready APIs.",
-  seoTitle: "Jayhind Yadav | Node.js Backend & Full Stack Developer in India",
+    "Jayhind Yadav is a backend-focused fullstack engineer with 4+ years of experience building scalable APIs, real-time systems, CRM platforms, Redis/BullMQ pipelines, PostgreSQL-backed services, Docker deployments, and AWS-based production systems.",
+  seoTitle: "Jayhind Yadav | Senior Software Engineer | Node.js Backend Developer",
   seoDescription:
-    "Portfolio of Jayhind Yadav, a 4+ year backend-focused full stack developer in India building Node.js, JavaScript, PostgreSQL, Redis, BullMQ, Docker, AWS services, CRM systems, real-time workflows, and scalable business APIs.",
+    "Portfolio and resume of Jayhind Yadav, a Senior Software Engineer and backend-focused fullstack engineer in Delhi with 4+ years of experience in Node.js, React, PostgreSQL, Redis, BullMQ, Docker, AWS, CRM systems, real-time workflows, and scalable business APIs.",
   email: "jayhinddv@gmail.com",
   phone: "+91 727-584-1548",
   location: "Delhi, India",
@@ -179,12 +179,12 @@ export const highlights = [
     body: "Designed backend APIs around business workflows, not isolated CRUD screens, with clear contracts for React clients and integrations.",
   },
   {
-    title: "Real-time CRM systems",
-    body: "Built calling workflows with WebRTC, PBX/Asterisk thinking, agent state, and customer communication inside daily CRM operations.",
+    title: "CRM calling, queues, and AI workflows",
+    body: "Built CRM workflows with calling, Redis/BullMQ processing, high-volume webhooks, multi-channel communication, and AI-led automation in one platform.",
   },
   {
-    title: "Async jobs and queues",
-    body: "Used Redis and BullMQ to keep user flows responsive while handling retries, duplicate execution, and long-running background work.",
+    title: "Multi-channel integrations",
+    body: "Integrated communication workflows with services such as Twilio, Brevo, and Gupshup for CRM activity, lead follow-up, and customer operations.",
   },
   {
     title: "Database performance",
@@ -194,6 +194,16 @@ export const highlights = [
     title: "Deployment-ready delivery",
     body: "Containerized services, prepared production handoffs, and worked with the small details that make software easier to operate.",
   },
+];
+
+export const keyAchievements = [
+  "Improved PostgreSQL performance by 30%+ through query optimization and indexing strategies.",
+  "Built scalable backend systems handling 100K+ transactions with high reliability.",
+  "Designed async processing pipelines using Redis and BullMQ for webhook handling.",
+  "Reduced API latency using caching and optimized data flow.",
+  "Developed 5+ production-grade applications including CRM and real-time systems.",
+  "Implemented AI-driven lead generation and call analysis features in CRM workflows.",
+  "Enhanced system reliability using queue-based architecture and fallback strategies.",
 ];
 
 export const expertise = [
@@ -215,21 +225,28 @@ export const expertise = [
   },
   {
     group: "Frontend Support",
-    skills: ["JavaScript", "React", "HTML", "CSS", "Dashboard workflows", "CRM interfaces"],
+    skills: ["JavaScript", "React.js", "HTML", "CSS", "Dashboard workflows", "CRM interfaces"],
+  },
+  {
+    group: "APIs & Integrations",
+    skills: ["Twilio", "Brevo", "Gupshup", "AI API integration", "Workflow automation", "Call / data analysis"],
   },
 ];
 
 export const experience = [
   {
     company: "VI Exports Pvt. Ltd.",
-    role: "Software Engineer",
+    role: "Senior Fullstack Developer",
     period: "Dec 2024 - Present",
     location: "Delhi, India",
     bullets: [
-      "Own backend-heavy full-stack features for CRM and business workflow systems using Node.js, React, and PostgreSQL.",
-      "Design REST APIs, webhook flows, and real-time communication paths for internal teams that depend on fast operational visibility.",
-      "Use Redis and BullMQ for asynchronous processing, retries, caching, and duplicate execution control across running services.",
-      "Containerize services with Docker and work with AWS services including EC2, S3, RDS, DynamoDB, ECS/ECR, API Gateway, Lambda, SES, and SNS.",
+      "Built and scaled CRM platform using Node.js, React, PostgreSQL, and Redis.",
+      "Handled high-volume webhook processing using BullMQ queues to prevent database overload.",
+      "Integrated Twilio, Brevo, and Gupshup for multi-channel communication workflows.",
+      "Optimized PostgreSQL queries and indexing, improving performance by 30%+.",
+      "Implemented AI-based lead generation and call recording analysis features.",
+      "Designed caching strategies reducing database load and improving API performance.",
+      "Deployed containerized applications using Docker on cloud infrastructure.",
     ],
   },
   {
@@ -238,19 +255,19 @@ export const experience = [
     period: "Oct 2023 - Dec 2024",
     location: "Noida, India",
     bullets: [
-      "Built full-stack systems for property valuation workflows with Node.js, React, MongoDB, SQL Server, and external APIs.",
-      "Contributed to system architecture, API design, QA collaboration, and production handoffs for valuation and reporting products used by business teams.",
-      "Improved database-heavy workflows through SQL tuning, cleaner data access, and focused backend ownership.",
+      "Developed scalable full-stack applications using Node.js, React, and MongoDB.",
+      "Designed REST APIs and optimized SQL Server queries, improving performance by 20%.",
+      "Contributed to system architecture, reducing development time by 15%.",
     ],
   },
   {
     company: "Absolute Dimensions Pvt. Ltd.",
-    role: "Software Engineer",
+    role: "Software Developer",
     period: "Jun 2021 - Jul 2023",
     location: "Patna, India",
     bullets: [
-      "Delivered MERN and MySQL-backed products across e-commerce, medical, and enterprise workflows in a startup environment.",
-      "Handled end-to-end feature development from backend APIs to React interfaces, with attention to data flow, maintainability, and delivery speed.",
+      "Built MERN stack applications and optimized MySQL databases for large datasets.",
+      "Developed responsive UI using React.js for enterprise applications.",
     ],
   },
 ];
@@ -258,25 +275,27 @@ export const experience = [
 export const projects = [
   {
     slug: "crm-real-time-calling",
-    title: "CRM Platform with Integrated Real-Time Calling",
+    title: "CRM Platform with Calling, BullMQ Workers and AI Automation",
     summary:
-      "A unified CRM and calling workspace for leads, customer interactions, agent state, and operational reporting.",
+      "A unified CRM workspace for leads, calling workflows, high-volume webhooks, Redis/BullMQ workers, multi-channel communication, AI lead generation, call recording analysis, and operational reporting.",
     problem:
-      "Businesses needed one place to manage leads, customer interactions, and calling workflows without constantly switching between CRM screens and external calling tools.",
+      "Business teams needed one place to manage leads, customer communication, calling workflows, webhook-heavy events, follow-up automation, and reporting without switching between disconnected tools or overloading the database.",
     solution:
-      "Built a CRM platform with integrated real-time calling using WebRTC for internal communication and PBX/Asterisk-oriented external call flows, keeping agent-to-customer interaction inside the same business interface.",
+      "Built and scaled an in-house CRM platform using Node.js, React, PostgreSQL, Redis, and BullMQ. The system combines calling workflows, queue-backed webhook processing, Twilio/Brevo/Gupshup integrations, AI-powered lead generation, and call recording analysis inside the same operational workspace.",
     architecture: [
-      "Integrated telephony into CRM workflows instead of treating calls as a separate external tool.",
-      "Used Redis for session handling, real-time state, and coordination between active agents.",
-      "Designed APIs for lead workflows, call events, customer state, and operational reporting.",
-      "Managed concurrency and duplicate state updates across agents and running services.",
+      "Integrated calling and customer communication into CRM workflows instead of treating them as separate external tools.",
+      "Used Redis and BullMQ for high-volume webhook processing, async jobs, retries, and protection against database overload.",
+      "Integrated Twilio, Brevo, and Gupshup for multi-channel communication workflows.",
+      "Implemented AI-based lead generation and call recording analysis features for business teams.",
+      "Optimized PostgreSQL queries, indexing, and caching strategies to reduce API latency and database load.",
+      "Designed APIs for leads, call events, webhook events, customer state, follow-ups, and operational reporting.",
     ],
     impact: [
-      "Reduced dependency on disconnected third-party tools.",
-      "Improved agent response flow by keeping call context near lead and customer data.",
-      "Made real-time communication part of the core business workflow.",
+      "Improved PostgreSQL performance by 30%+ through query optimization and indexing.",
+      "Handled high-volume webhook processing through queue-based architecture.",
+      "Kept lead, call, communication, automation, and reporting context inside one CRM workflow.",
     ],
-    stack: ["Node.js", "React", "PostgreSQL", "Redis", "WebRTC", "Asterisk", "Docker"],
+    stack: ["Node.js", "React", "PostgreSQL", "Redis", "BullMQ", "Docker", "Twilio", "Brevo", "Gupshup", "AI APIs"],
   },
   {
     slug: "valuation-reporting",
@@ -299,28 +318,6 @@ export const projects = [
       "Made valuation data more consistent across generated reports.",
     ],
     stack: ["Node.js", "React", "PostgreSQL", "SQL Server", "External APIs"],
-  },
-  {
-    slug: "ai-lead-generation",
-    title: "AI-Powered Lead Generation & Automation Workflows",
-    summary:
-      "Automated lead workflows with integrations, queue-backed processing, and reliable communication events.",
-    problem:
-      "Sales teams needed better lead routing and follow-up automation without losing visibility into the pipeline.",
-    solution:
-      "Built backend workflows that process lead events, trigger communication paths, and use job queues to keep automation reliable under load.",
-    architecture: [
-      "Separated user-facing actions from long-running automation through BullMQ workers.",
-      "Used Redis for queue coordination and state needed across worker processes.",
-      "Designed webhook-friendly APIs for third-party communication and lead events.",
-      "Kept automation decisions traceable for operational review.",
-    ],
-    impact: [
-      "Made lead follow-up less dependent on manual steps.",
-      "Improved reliability by moving automation into background workers.",
-      "Prepared the system for higher event volume and integration growth.",
-    ],
-    stack: ["Node.js", "React", "PostgreSQL", "Redis", "BullMQ", "Webhooks"],
   },
   {
     slug: "legal-advisory-platform",

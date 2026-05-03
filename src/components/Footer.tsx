@@ -9,7 +9,7 @@ export function Footer() {
         <div>
           <p className="font-semibold text-[color:var(--ink)]">{siteConfig.name}</p>
           <p className="mt-2 max-w-2xl text-sm leading-6 text-[color:var(--muted)]">
-            Full stack backend-heavy engineer building Node.js, React, PostgreSQL, Redis, queue, and real-time systems for business workflows.
+            Senior Software Engineer building Node.js, React, PostgreSQL, Redis, BullMQ, Docker, AWS, CRM, and real-time systems for business workflows.
           </p>
         </div>
         <div className="flex flex-col gap-4 md:items-end">

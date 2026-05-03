@@ -42,12 +42,12 @@ export default function HomePage() {
         <div className="container-shell">
           <div className="grid gap-8 lg:grid-cols-[0.62fr_0.38fr] lg:items-end">
             <FadeIn>
-              <p className="section-kicker">Backend-focused full-stack developer</p>
+              <p className="section-kicker">Senior Software Engineer / Backend-focused fullstack</p>
               <h1 className="mt-5 max-w-[820px] text-balance text-4xl font-semibold leading-[1.02] text-[color:var(--ink)] sm:text-6xl lg:text-[4.7rem]">
                 I build reliable web systems for teams that need software to hold up in production.
               </h1>
               <p className="mt-5 max-w-[720px] text-base leading-8 text-[color:var(--muted)] sm:text-lg">
-                I am a 4+ year developer working across Node.js, JavaScript, PostgreSQL, Redis, BullMQ, Docker, CRM systems, AWS services, real-time workflows, and production APIs. I turn business requirements into clear backend architecture and usable full-stack products.
+                I am a 4+ year backend-focused fullstack engineer working across Node.js, React, PostgreSQL, Redis, BullMQ, Docker, AWS, CRM systems, high-volume webhooks, AI integrations, real-time workflows, and production APIs.
               </p>
 
               <div className="mt-7 flex flex-wrap gap-3">

@@ -26,14 +26,14 @@ export default function OpenGraphImage() {
       >
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div style={{ fontSize: 28, fontWeight: 700 }}>{siteConfig.name}</div>
-          <div style={{ fontSize: 22, color: "#1f6feb" }}>Node.js | React | PostgreSQL | Redis</div>
+          <div style={{ fontSize: 22, color: "#1f6feb" }}>Node.js | React | PostgreSQL | Redis | Docker | AWS</div>
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ fontSize: 76, lineHeight: 1.05, fontWeight: 800, letterSpacing: "-0.05em", maxWidth: 900 }}>
-            Backend-heavy full-stack systems engineer.
+            Senior Software Engineer.
           </div>
           <div style={{ marginTop: 30, fontSize: 28, lineHeight: 1.35, color: "#566174", maxWidth: 920 }}>
-            APIs, real-time workflows, distributed jobs, Docker deployments, and production performance.
+            Backend-focused fullstack work across APIs, CRM systems, Redis/BullMQ jobs, Docker, AWS, and production performance.
           </div>
         </div>
         <div style={{ display: "flex", gap: 16, fontSize: 22 }}>
