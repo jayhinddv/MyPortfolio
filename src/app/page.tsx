@@ -108,8 +108,8 @@ export default function HomePage() {
         <div className="container-shell">
           <SectionHeading
             eyebrow="Profile Snapshot"
-            title="Searchable context for recruiters and engineering teams."
-            description="A concise view of the roles, stack, and domains connected to my work as a backend-focused full-stack developer."
+            title="Where my experience fits best."
+            description="A concise view of the role, stack, and production systems I work with most often."
           />
           <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {profileSnapshot.map((group) => (

@@ -1,4 +1,4 @@
-import { blogPosts, faq, projects, seoKeywords, siteConfig } from "@/data/site";
+import { blogPosts, faq, navItems, projects, seoKeywords, siteConfig } from "@/data/site";
 
 export function absoluteUrl(path = "") {
   return `${siteConfig.baseUrl}${path}`;
@@ -95,6 +95,16 @@ export function websiteJsonLd() {
     keywords: seoKeywords.join(", "),
     publisher: { "@id": `${siteConfig.baseUrl}/#person` },
     author: { "@id": `${siteConfig.baseUrl}/#person` },
+  };
+}
+
+export function siteNavigationJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "SiteNavigationElement",
+    "@id": `${siteConfig.baseUrl}/#site-navigation`,
+    name: navItems.map((item) => item.label),
+    url: navItems.map((item) => absoluteUrl(item.href)),
   };
 }
 

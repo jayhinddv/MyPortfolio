@@ -155,12 +155,12 @@ export const profileSnapshot = [
     ],
   },
   {
-    label: "Long-tail recruiter matches",
+    label: "Best-fit engineering work",
     items: [
-      "Node.js backend developer with Redis, BullMQ, PostgreSQL, Docker, and AWS",
-      "Backend developer for CRM systems, REST APIs, webhooks, and real-time workflows",
-      "AWS backend developer using EC2, S3, RDS, DynamoDB, ECS, ECR, API Gateway, Lambda, SES, and SNS",
-      "JavaScript backend engineer for scalable APIs, queues, caching, and production business systems",
+      "Node.js backend systems with Redis, BullMQ, PostgreSQL, Docker, and AWS.",
+      "CRM platforms with REST APIs, webhooks, communication workflows, and real-time operations.",
+      "AWS-backed services using EC2, S3, RDS, DynamoDB, ECS, ECR, API Gateway, Lambda, SES, and SNS.",
+      "JavaScript backend work focused on scalable APIs, queues, caching, and production business systems.",
     ],
   },
 ];

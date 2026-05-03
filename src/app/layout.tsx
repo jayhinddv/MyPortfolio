@@ -3,7 +3,7 @@ import Script from "next/script";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
-import { backendServiceJsonLd, personJsonLd, profilePageJsonLd, websiteJsonLd } from "@/lib/seo";
+import { backendServiceJsonLd, personJsonLd, profilePageJsonLd, siteNavigationJsonLd, websiteJsonLd } from "@/lib/seo";
 import { seoKeywords, siteConfig } from "@/data/site";
 import "./globals.css";
 
@@ -61,8 +61,8 @@ export const metadata: Metadata = {
     creator: "@Jayhind_Indian",
   },
   icons: {
-    icon: "/jksvg.png",
-    shortcut: "/jksvg.png",
+    icon: [{ url: "/favicon.png", sizes: "500x500", type: "image/png" }],
+    shortcut: "/favicon.png",
     apple: "/portfolioLogo.png",
   },
 };
@@ -82,7 +82,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         </Script>
       </head>
       <body>
-        <JsonLd data={[personJsonLd(), websiteJsonLd(), profilePageJsonLd(), backendServiceJsonLd()]} />
+        <JsonLd data={[personJsonLd(), websiteJsonLd(), profilePageJsonLd(), siteNavigationJsonLd(), backendServiceJsonLd()]} />
         <Header />
         <main>{children}</main>
         <Footer />
