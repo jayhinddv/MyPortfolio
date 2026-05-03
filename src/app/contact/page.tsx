@@ -8,7 +8,7 @@ import { seoKeywords, siteConfig } from "@/data/site";
 export const metadata: Metadata = {
   title: "Contact | Hire Jayhind Yadav",
   description:
-    "Contact Jayhind Yadav for backend-focused full stack engineering roles involving Node.js, React, PostgreSQL, Redis, Docker, CRM systems, real-time workflows, and scalable APIs.",
+    "Contact Jayhind Yadav for backend-focused full stack engineering roles involving Node.js, JavaScript, PostgreSQL, Redis, BullMQ, Docker, AWS services, CRM systems, real-time workflows, and scalable APIs.",
   keywords: [
     ...seoKeywords,
     "hire Jayhind Yadav",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact Jayhind Yadav | Backend-Focused Full Stack Developer",
     description:
-      "Reach Jayhind Yadav for Node.js, React, PostgreSQL, Redis, Docker, CRM, real-time workflow, and production API roles.",
+      "Reach Jayhind Yadav for Node.js, JavaScript, PostgreSQL, Redis, BullMQ, Docker, AWS, CRM, real-time workflow, and production API roles.",
     url: `${siteConfig.baseUrl}/contact`,
     type: "website",
   },
@@ -35,7 +35,7 @@ export default function ContactPage() {
           <SectionHeading
             eyebrow="Contact"
             title="Let’s talk if the role needs practical backend ownership."
-            description="Open to backend-focused full-stack roles, scalable systems work, CRM/calling workflows, Redis queues, PostgreSQL performance, and production platform engineering."
+            description="Open to backend-focused full-stack roles, scalable systems work, CRM/calling workflows, Redis and BullMQ queues, PostgreSQL performance, Docker, AWS services, and production platform engineering."
           />
           <div>
             <ContactLinks />

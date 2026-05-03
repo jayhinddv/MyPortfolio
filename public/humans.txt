@@ -1,0 +1,10 @@
+Jayhind Yadav
+Site: https://www.jayhinddev.in
+Role: Backend-Focused Full Stack Developer
+Location: Delhi, India
+Email: jayhinddv@gmail.com
+GitHub: https://github.com/jayhinddv
+LinkedIn: https://www.linkedin.com/in/jayhind-yadav-224908276/
+
+Core topics:
+Node.js, JavaScript, React, PostgreSQL, SQL Server, MongoDB, Redis, BullMQ, Docker, REST APIs, Webhooks, WebRTC, Asterisk PBX, CRM systems, real-time workflows, database performance, production APIs, AWS EC2, AWS S3, DynamoDB, AWS RDS, AWS ECS, AWS ECR, API Gateway, Lambda, SES, SNS.

@@ -23,7 +23,27 @@ export function personJsonLd() {
     address: {
       "@type": "PostalAddress",
       addressLocality: "Delhi",
+      addressRegion: "Delhi",
       addressCountry: "IN",
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "recruiting",
+      email: siteConfig.email,
+      telephone: siteConfig.phone,
+      areaServed: ["IN", "Remote"],
+      availableLanguage: ["English", "Hindi"],
+    },
+    hasOccupation: {
+      "@type": "Occupation",
+      name: "Backend-Focused Full Stack Developer",
+      occupationLocation: {
+        "@type": "Country",
+        name: "India",
+      },
+      skills: seoKeywords.join(", "),
+      responsibilities:
+        "Node.js API development, JavaScript application development, PostgreSQL data modeling, Redis queue processing, BullMQ workers, Docker deployments, AWS EC2, S3, RDS, DynamoDB, ECS, ECR, API Gateway, Lambda, SES, SNS, CRM workflows, real-time calling systems, database performance, and production handoffs.",
     },
     sameAs: [
       siteConfig.socials.github,
@@ -33,11 +53,22 @@ export function personJsonLd() {
     ],
     knowsAbout: [
       "Node.js",
+      "JavaScript",
       "React",
       "PostgreSQL",
       "Redis",
       "BullMQ",
       "Docker",
+      "AWS EC2",
+      "AWS S3",
+      "AWS RDS",
+      "DynamoDB",
+      "AWS ECS",
+      "AWS ECR",
+      "AWS API Gateway",
+      "AWS Lambda",
+      "AWS SES",
+      "AWS SNS",
       "Asterisk PBX",
       "System Design",
       "Backend Engineering",
@@ -79,6 +110,40 @@ export function profilePageJsonLd() {
     dateModified: new Date().toISOString(),
     mainEntity: { "@id": `${siteConfig.baseUrl}/#person` },
     about: { "@id": `${siteConfig.baseUrl}/#person` },
+    keywords: seoKeywords.join(", "),
+  };
+}
+
+export function backendServiceJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${siteConfig.baseUrl}/#backend-development-service`,
+    name: "Node.js backend and CRM systems development",
+    description:
+      "Backend-focused full stack development using Node.js, JavaScript, Express.js, PostgreSQL, Redis, BullMQ, Docker, AWS services, REST APIs, webhooks, CRM systems, real-time workflows, and production business APIs.",
+    provider: { "@id": `${siteConfig.baseUrl}/#person` },
+    areaServed: [
+      { "@type": "Country", name: "India" },
+      { "@type": "Place", name: "Remote" },
+    ],
+    serviceType: [
+      "Node.js backend development",
+      "JavaScript backend development",
+      "Express.js REST API development",
+      "PostgreSQL backend development",
+      "Redis caching and session development",
+      "BullMQ queue and worker development",
+      "Docker backend deployment",
+      "AWS EC2 S3 RDS DynamoDB backend development",
+      "AWS Lambda API Gateway backend development",
+      "AWS ECS ECR deployment support",
+      "AWS SES SNS integration",
+      "CRM backend development",
+      "Real-time workflow backend development",
+      "Webhook and API integration development",
+    ],
+    keywords: seoKeywords.join(", "),
   };
 }
 

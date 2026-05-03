@@ -8,7 +8,7 @@ import { experience, expertise, seoKeywords, siteConfig } from "@/data/site";
 export const metadata: Metadata = {
   title: "Resume | Node.js Backend-Focused Full Stack Developer",
   description:
-    "Resume for Jayhind Yadav, a 4+ year backend-focused full stack developer in India focused on Node.js, React, PostgreSQL, Redis, BullMQ, Docker, CRM systems, and production APIs.",
+    "Resume for Jayhind Yadav, a 4+ year backend-focused full stack developer in India focused on Node.js, JavaScript, PostgreSQL, Redis, BullMQ, Docker, AWS services, CRM systems, and production APIs.",
   keywords: [
     ...seoKeywords,
     "Jayhind Yadav resume",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Jayhind Yadav Resume | Node.js Backend & Full Stack Developer",
     description:
-      "Resume and technical experience for Jayhind Yadav across Node.js, React, PostgreSQL, Redis, BullMQ, Docker, and production business systems.",
+      "Resume and technical experience for Jayhind Yadav across Node.js, JavaScript, PostgreSQL, Redis, BullMQ, Docker, AWS services, CRM systems, and production business APIs.",
     url: `${siteConfig.baseUrl}/resume`,
     type: "profile",
   },

@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { ProjectCaseCard } from "@/components/ProjectCaseCard";
 import { SectionHeading } from "@/components/SectionHeading";
 import { breadcrumbJsonLd, faqJsonLd, portfolioItemListJsonLd, projectsJsonLd } from "@/lib/seo";
-import { experience, expertise, faq, highlights, projects, siteConfig } from "@/data/site";
+import { experience, expertise, faq, highlights, profileSnapshot, projects, siteConfig } from "@/data/site";
 
 const stats = [
   ["4+ years", "building business software"],
@@ -47,7 +47,7 @@ export default function HomePage() {
                 I build reliable web systems for teams that need software to hold up in production.
               </h1>
               <p className="mt-5 max-w-[720px] text-base leading-8 text-[color:var(--muted)] sm:text-lg">
-                I am a 4+ year developer working across Node.js, React, PostgreSQL, Redis, BullMQ, Docker, real-time calling flows, and production APIs. I turn business requirements into clear backend architecture and usable full-stack products.
+                I am a 4+ year developer working across Node.js, JavaScript, PostgreSQL, Redis, BullMQ, Docker, CRM systems, AWS services, real-time workflows, and production APIs. I turn business requirements into clear backend architecture and usable full-stack products.
               </p>
 
               <div className="mt-7 flex flex-wrap gap-3">
@@ -105,6 +105,30 @@ export default function HomePage() {
       </section>
 
       <section className="section-space section-band">
+        <div className="container-shell">
+          <SectionHeading
+            eyebrow="Profile Snapshot"
+            title="Searchable context for recruiters and engineering teams."
+            description="A concise view of the roles, stack, and domains connected to my work as a backend-focused full-stack developer."
+          />
+          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {profileSnapshot.map((group) => (
+              <article key={group.label} className="border border-[color:var(--line)] bg-[color:var(--card)] p-5">
+                <h3 className="text-lg font-semibold text-[color:var(--ink)]">{group.label}</h3>
+                <ul className="mt-4 grid gap-3 text-sm leading-6 text-[color:var(--muted)]">
+                  {group.items.map((item) => (
+                    <li key={item} className="border-l border-[color:var(--line)] pl-4">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-space">
         <div className="container-shell">
           <SectionHeading
             eyebrow="Work Standard"

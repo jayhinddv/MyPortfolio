@@ -3,7 +3,7 @@ import Script from "next/script";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
-import { personJsonLd, profilePageJsonLd, websiteJsonLd } from "@/lib/seo";
+import { backendServiceJsonLd, personJsonLd, profilePageJsonLd, websiteJsonLd } from "@/lib/seo";
 import { seoKeywords, siteConfig } from "@/data/site";
 import "./globals.css";
 
@@ -82,7 +82,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         </Script>
       </head>
       <body>
-        <JsonLd data={[personJsonLd(), websiteJsonLd(), profilePageJsonLd()]} />
+        <JsonLd data={[personJsonLd(), websiteJsonLd(), profilePageJsonLd(), backendServiceJsonLd()]} />
         <Header />
         <main>{children}</main>
         <Footer />

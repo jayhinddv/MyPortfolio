@@ -5,21 +5,23 @@ import { breadcrumbJsonLd, portfolioItemListJsonLd, projectsJsonLd } from "@/lib
 import { projects, seoKeywords, siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Projects | Node.js, React, PostgreSQL & Redis Case Studies",
+  title: "Projects | Node.js, PostgreSQL, Redis, Docker & AWS Case Studies",
   description:
-    "Software engineering case studies by Jayhind Yadav covering Node.js APIs, React dashboards, PostgreSQL workflows, Redis queues, CRM calling systems, property valuation, legal platforms, and automation.",
+    "Software engineering case studies by Jayhind Yadav covering Node.js APIs, JavaScript systems, PostgreSQL workflows, Redis queues, BullMQ workers, Docker deployments, AWS services, CRM calling systems, and automation.",
   keywords: [
     ...seoKeywords,
     "Jayhind Yadav projects",
     "Node.js project case study",
-    "React PostgreSQL portfolio",
+    "JavaScript PostgreSQL portfolio",
     "Redis queue case study",
+    "AWS backend case study",
+    "Docker backend project",
   ],
   alternates: { canonical: "/projects" },
   openGraph: {
     title: "Jayhind Yadav Projects | Backend & Full Stack Case Studies",
     description:
-      "Case studies covering CRM calling systems, Redis queues, PostgreSQL workflows, automation, legal platforms, and production-ready full-stack systems.",
+      "Case studies covering CRM calling systems, Redis queues, BullMQ workers, PostgreSQL workflows, Docker deployments, AWS services, automation, and production-ready backend systems.",
     url: `${siteConfig.baseUrl}/projects`,
     type: "website",
   },

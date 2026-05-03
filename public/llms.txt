@@ -1,0 +1,35 @@
+# Jayhind Yadav
+
+Jayhind Yadav is a backend-focused full stack developer based in Delhi, India.
+
+Website: https://www.jayhinddev.in
+GitHub: https://github.com/jayhinddv
+LinkedIn: https://www.linkedin.com/in/jayhind-yadav-224908276/
+Email: jayhinddv@gmail.com
+
+## Professional Focus
+
+Jayhind builds reliable backend-focused business systems using Node.js, JavaScript, React, PostgreSQL, Redis, BullMQ, Docker, REST APIs, webhooks, CRM workflows, real-time calling systems, production-ready backend services, and AWS services including EC2, S3, DynamoDB, RDS, ECS, ECR, API Gateway, Lambda, SES, and SNS.
+
+## Search-Relevant Topics
+
+- Backend-focused full stack developer in India
+- Node.js backend developer
+- JavaScript and PostgreSQL software engineer
+- Redis and BullMQ queue developer
+- Docker and AWS backend developer
+- Node.js backend developer with Redis, BullMQ, PostgreSQL, Docker, and AWS
+- Backend developer for CRM systems, REST APIs, webhooks, and real-time workflows
+- AWS backend developer using EC2, S3, RDS, DynamoDB, ECS, ECR, API Gateway, Lambda, SES, and SNS
+- CRM software developer
+- Real-time calling workflow developer
+- Production API developer
+- Database performance and scalable systems
+
+## Important Pages
+
+- Home: https://www.jayhinddev.in/
+- Projects: https://www.jayhinddev.in/projects
+- Resume: https://www.jayhinddev.in/resume
+- Contact: https://www.jayhinddev.in/contact
+- Blog: https://www.jayhinddev.in/blog
