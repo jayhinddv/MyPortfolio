@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbJsonLd, blogPostingJsonLd } from "@/lib/seo";
-import { blogPosts, seoKeywords, siteConfig } from "@/data/site";
+import { blogPosts } from "@/data/blog";
+import { seoKeywords, siteConfig } from "@/data/site";
 
 type BlogPostPageProps = {
   params: Promise<{ slug: string }>;

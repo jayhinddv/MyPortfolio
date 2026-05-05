@@ -1,4 +1,5 @@
-import { blogPosts, faq, navItems, projects, seoKeywords, siteConfig } from "@/data/site";
+import { blogPosts } from "@/data/blog";
+import { faq, navItems, projects, seoKeywords, siteConfig } from "@/data/site";
 
 export function absoluteUrl(path = "") {
   return `${siteConfig.baseUrl}${path}`;

@@ -4,7 +4,8 @@ import { ArrowRight } from "lucide-react";
 import { JsonLd } from "@/components/JsonLd";
 import { SectionHeading } from "@/components/SectionHeading";
 import { breadcrumbJsonLd } from "@/lib/seo";
-import { blogPosts, seoKeywords, siteConfig } from "@/data/site";
+import { blogPosts } from "@/data/blog";
+import { seoKeywords, siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Engineering Blog | Node.js, Redis, BullMQ & PostgreSQL Notes",
